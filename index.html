@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ============================================================
+     EDIT EVERYTHING IN [SQUARE BRACKETS], THEN DELETE THE BRACKETS.
+     Search the file for "[" to find them all.
+     ============================================================ -->
+
+<title>Wuxi Fingerhold — punk rock from Northampton, Pennsylvania</title>
+<meta name="description" content="Wuxi Fingerhold is a punk band from Northampton, Pennsylvania. Debut EP Skadoosh! out now.">
+<link rel="canonical" href="https://wuxifingerhold.com/">
+
+<!-- Social share card -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Wuxi Fingerhold">
+<meta property="og:title" content="Wuxi Fingerhold — punk rock from Northampton, Pennsylvania">
+<meta property="og:description" content="Debut EP Skadoosh! out now.">
+<meta property="og:url" content="https://wuxifingerhold.com/">
+<meta property="og:image" content="https://wuxifingerhold.com/share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Favicon: swap for a real one later -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23000'/><text y='74' x='50' text-anchor='middle' font-size='68' font-family='sans-serif' font-weight='900' fill='%23FF3D8B'>W</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --paper:#e8e6df;
+  --paper-deep:#dedbd2;
+  --ink:#000000;
+  --ink-soft:#6b6860;
+  --fluo:#ff3d8b;
+  --measure:62ch;
+  --edge:4px;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+
+body{
+  margin:0;
+  background-color:var(--paper);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)' opacity='0.26'/%3E%3C/svg%3E");
+  color:var(--ink);
+  font-family:"Courier Prime",ui-monospace,"Courier New",monospace;
+  font-size:16px;
+  line-height:1.6;
+}
+
+.wrap{max-width:860px;margin:0 auto;padding:0 24px}
+
+a{color:var(--ink);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:2px}
+a:hover{color:var(--fluo)}
+a:focus-visible,button:focus-visible,input:focus-visible{
+  outline:3px solid var(--fluo);outline-offset:3px
+}
+
+/* ---------- masthead ---------- */
+.top{
+  display:flex;justify-content:space-between;align-items:baseline;
+  gap:16px;flex-wrap:wrap;
+  padding:20px 0 0;
+  font-size:13px;letter-spacing:.06em;
+}
+.top nav{display:flex;gap:20px}
+.top a{text-decoration:none;border-bottom:2px solid transparent}
+.top a:hover{border-bottom-color:var(--fluo)}
+
+/* ---------- hero: two-colour screenprint, slightly misregistered ---------- */
+.hero{padding:34px 0 10px;position:relative}
+
+.wordmark{
+  position:relative;
+  margin:0;
+  font-family:"Archivo Black",Impact,sans-serif;
+  font-weight:400;
+  font-size:clamp(3.3rem,13.2vw,8.6rem);
+  line-height:.84;
+  letter-spacing:-.035em;
+  text-transform:uppercase;
+}
+.wordmark .layer{display:block}
+.wordmark .plate{
+  position:absolute;inset:0;
+  color:var(--fluo);
+  mix-blend-mode:multiply;
+  transform:translate(7px,6px);
+  animation:register .85s cubic-bezier(.16,.84,.34,1) both;
+}
+@keyframes register{
+  from{transform:translate(26px,20px);opacity:.55}
+  to{transform:translate(7px,6px);opacity:1}
+}
+@media (prefers-reduced-motion:reduce){
+  .wordmark .plate{animation:none}
+}
+
+.standfirst{
+  max-width:var(--measure);
+  margin:26px 0 0;
+  font-size:1.05rem;
+  border-top:var(--edge) solid var(--ink);
+  padding-top:16px;
+}
+.standfirst b{background:var(--fluo);padding:0 4px}
+
+/* ---------- sections ---------- */
+section{padding:52px 0;border-top:2px solid var(--ink)}
+section:first-of-type{border-top:none}
+
+h2{
+  font-family:"Archivo Black",Impact,sans-serif;
+  font-weight:400;
+  font-size:clamp(1.6rem,4.6vw,2.4rem);
+  letter-spacing:-.02em;
+  margin:0 0 22px;
+}
+p{max-width:var(--measure)}
+
+/* ---------- player ---------- */
+.player{
+  margin-top:30px;
+  border:var(--edge) solid var(--ink);
+  background:var(--paper-deep);
+  padding:6px;
+}
+.player iframe{display:block;width:100%;height:352px;border:0}
+.player .fallback{padding:26px;font-size:.95rem}
+
+/* ---------- shows ---------- */
+.gig{
+  display:grid;
+  grid-template-columns:132px 1fr auto;
+  gap:4px 22px;
+  align-items:baseline;
+  padding:16px 0;
+  border-bottom:2px dotted var(--ink-soft);
+}
+.gig:first-of-type{border-top:2px dotted var(--ink-soft)}
+.gig .when{
+  font-family:"Archivo Black",Impact,sans-serif;
+  font-size:1.15rem;letter-spacing:-.01em;text-transform:uppercase;
+}
+.gig .where{font-weight:700}
+.gig .where span{display:block;font-weight:400;color:var(--ink-soft);font-size:.9rem}
+.gig .ticket{white-space:nowrap;font-size:.9rem}
+.gig.past{opacity:.45}
+.no-gigs{border:2px dashed var(--ink-soft);padding:22px;color:var(--ink-soft)}
+
+/* ---------- listen ---------- */
+.platforms{
+  list-style:none;margin:0;padding:0;
+  display:flex;flex-wrap:wrap;gap:12px;
+}
+.platforms a{
+  display:block;
+  border:3px solid var(--ink);
+  background:var(--paper);
+  padding:11px 20px;
+  text-decoration:none;
+  font-weight:700;
+  box-shadow:5px 5px 0 var(--ink);
+}
+.platforms a:hover{
+  background:var(--fluo);color:var(--ink);
+  box-shadow:2px 2px 0 var(--ink);
+  transform:translate(3px,3px);
+}
+
+/* ---------- mailing list ---------- */
+.signup{
+  display:flex;flex-wrap:wrap;gap:12px;
+  margin-top:22px;max-width:var(--measure);
+}
+.signup input[type=email]{
+  flex:1 1 230px;
+  font:inherit;
+  padding:13px 14px;
+  border:3px solid var(--ink);
+  background:var(--paper);
+  color:var(--ink);
+}
+.signup button{
+  font:inherit;font-weight:700;cursor:pointer;
+  padding:13px 26px;
+  border:3px solid var(--ink);
+  background:var(--ink);color:var(--paper);
+}
+.signup button:hover{background:var(--fluo);color:var(--ink)}
+.fineprint{font-size:.85rem;color:var(--ink-soft);margin-top:12px}
+
+/* ---------- footer ---------- */
+footer{
+  border-top:var(--edge) solid var(--ink);
+  padding:34px 0 60px;
+  font-size:.92rem;
+}
+.contact{margin:0 0 20px}
+.contact dt{font-weight:700;float:left;width:88px;clear:left}
+.contact dd{margin:0 0 8px 88px}
+.colophon{color:var(--ink-soft);font-size:.82rem;margin-top:26px}
+
+@media (max-width:620px){
+  .gig{grid-template-columns:1fr;gap:3px}
+  .gig .ticket{margin-top:6px}
+  .contact dt{float:none;width:auto}
+  .contact dd{margin-left:0;margin-bottom:14px}
+}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <span>Punk rock. Northampton, PA.</span>
+    <nav>
+      <a href="#shows">Shows</a>
+      <a href="#listen">Listen</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1 class="wordmark">
+      <span class="plate layer" aria-hidden="true">Wuxi<br>Fingerhold</span>
+      <span class="layer">Wuxi<br>Fingerhold</span>
+    </h1>
+    <p class="standfirst">
+      Six songs, 16 minutes, recorded [where]. The debut EP
+      <b>Skadoosh!</b> is out now.
+    </p>
+  </div>
+
+  <section id="listen-now">
+    <div class="player">
+      <!-- Spotify → Share → Embed. Paste the src here. Works once the page is served over http(s). -->
+      <iframe
+        src="https://open.spotify.com/embed/artist/0KprsIbzlMC8QYMLsVGr4Q?utm_source=generator"
+        title="Wuxi Fingerhold on Spotify"
+        loading="lazy"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+  </section>
+
+  <section id="shows">
+    <h2>Shows</h2>
+
+    <!-- Copy a .gig block per show. Delete the .no-gigs block once you add one. -->
+    <!-- Shows hidden until venues and tickets are confirmed.
+    <div class="gig">
+      <div class="when">Oct 24</div>
+      <div class="where">[Venue]<span>[City], PA &mdash; with [Band], [Band]</span></div>
+      <div class="ticket"><a href="[ticket link]">Tickets</a></div>
+    </div>
+
+    <div class="gig">
+      <div class="when">Nov 08</div>
+      <div class="where">[Venue]<span>[City], PA &mdash; all ages</span></div>
+      <div class="ticket"><a href="[ticket link]">Tickets</a></div>
+    </div>
+    -->
+
+    <p class="no-gigs">
+      Nothing booked right now. Booking a show? <a href="mailto:booking@wuxifingerhold.com">Get in touch.</a>
+    </p>
+  </section>
+
+  <section id="listen">
+    <h2>Listen</h2>
+    <!-- Keep the ?utm_ tags. They tell you which platform people actually click. -->
+    <ul class="platforms">
+      <li><a href="https://open.spotify.com/artist/0KprsIbzlMC8QYMLsVGr4Q?utm_source=site&amp;utm_medium=listen&amp;utm_campaign=skadoosh">Spotify</a></li>
+      <!-- <li><a href="[bandcamp url]?utm_source=site&amp;utm_medium=listen&amp;utm_campaign=skadoosh">Bandcamp</a></li> -->
+      <li><a href="https://music.apple.com/us/album/skadoosh-ep/6780181879?utm_source=site&amp;utm_medium=listen&amp;utm_campaign=skadoosh">Apple Music</a></li>
+      <!-- <li><a href="[youtube url]?utm_source=site&amp;utm_medium=listen&amp;utm_campaign=skadoosh">YouTube</a></li> -->
+      <li><a href="https://music.amazon.com/albums/B0H576KR51?utm_source=site&amp;utm_medium=listen&amp;utm_campaign=skadoosh">Amazon Music</a></li>
+    </ul>
+  </section>
+
+  <section id="list">
+    <h2>Mailing list</h2>
+    <p>One email a month at most. New songs and where we're playing. Nothing else.</p>
+
+    <!-- Buttondown: replace USERNAME. Or point action= at whatever you use. -->
+    <form class="signup"
+          action="https://buttondown.email/api/emails/embed-subscribe/USERNAME"
+          method="post" target="_blank">
+      <label for="email" hidden>Email address</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+      <button type="submit">Sign up</button>
+    </form>
+    <p class="fineprint">We won't sell your address. Unsubscribe any time.</p>
+  </section>
+
+  <footer id="contact">
+    <dl class="contact">
+      <dt>Booking</dt>
+      <dd><a href="mailto:booking@wuxifingerhold.com">booking@wuxifingerhold.com</a></dd>
+      <!-- Hidden until the links exist.
+      <dt>Press</dt>
+      <dd><a href="[press kit url]">Press kit, photos and bio</a></dd>
+      <dt>Follow</dt>
+      <dd>
+        <a href="[instagram]">Instagram</a>,
+        <a href="[tiktok]">TikTok</a>,
+        <a href="[youtube]">YouTube</a>
+      </dd>
+      -->
+    </dl>
+    <p class="colophon">&copy; <span id="yr">2026</span> Wuxi Fingerhold. Northampton, Pennsylvania.</p>
+  </footer>
+
+</div>
+
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+
+<!-- ============================================================
+     STRUCTURED DATA
+     This is what tells Google you are a band and not a Kung Fu
+     Panda move. Fill in every URL you actually have and delete
+     the lines you don't. Validate at validator.schema.org.
+     Add to "sameAs" once they exist: Bandcamp, YouTube, Instagram,
+     MusicBrainz and Wikidata URLs.
+     ============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MusicGroup",
+  "name": "Wuxi Fingerhold",
+  "description": "Punk rock band from Northampton, Pennsylvania.",
+  "genre": ["Punk rock", "Pop punk"],
+  "url": "https://wuxifingerhold.com/",
+  "image": "https://wuxifingerhold.com/share.jpg",
+  "email": "booking@wuxifingerhold.com",
+  "foundingDate": "2023",
+  "foundingLocation": {
+    "@type": "Place",
+    "name": "Northampton, Pennsylvania, United States"
+  },
+  "sameAs": [
+    "https://open.spotify.com/artist/0KprsIbzlMC8QYMLsVGr4Q",
+    "https://music.apple.com/us/artist/wuxi-fingerhold/6780052761"
+  ],
+  "album": {
+    "@type": "MusicAlbum",
+    "name": "Skadoosh!",
+    "albumReleaseType": "https://schema.org/EPRelease",
+    "datePublished": "2026-06-13",
+    "numTracks": 6,
+    "byArtist": { "@type": "MusicGroup", "name": "Wuxi Fingerhold" },
+    "track": [
+      { "@type": "MusicRecording", "name": "Patronize Me", "duration": "PT2M52S" },
+      { "@type": "MusicRecording", "name": "Palm Sunday", "duration": "PT2M33S" },
+      { "@type": "MusicRecording", "name": "Splinter", "duration": "PT3M30S" },
+      { "@type": "MusicRecording", "name": "Mutt", "duration": "PT1M51S" },
+      { "@type": "MusicRecording", "name": "All that She Wants", "duration": "PT1M55S" },
+      { "@type": "MusicRecording", "name": "Shards", "duration": "PT3M37S" }
+    ]
+  }
+}
+</script>
+
+<!-- One of these per upcoming show. Google surfaces concert results,
+     and almost no small band bothers with this. -->
+<!-- Hidden with the shows above. Uncomment when a show is confirmed.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MusicEvent",
+  "name": "Wuxi Fingerhold at [Venue]",
+  "startDate": "2026-10-24T20:00:00-04:00",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "performer": { "@type": "MusicGroup", "name": "Wuxi Fingerhold" },
+  "location": {
+    "@type": "MusicVenue",
+    "name": "[Venue]",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "[street]",
+      "addressLocality": "[City]",
+      "addressRegion": "PA",
+      "addressCountry": "US"
+    }
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "[ticket link]",
+    "price": "10",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  }
+}
+</script>
+-->
+
+<!-- Cloudflare Web Analytics: paste the snippet from your dashboard here.
+     Free, no cookie banner needed. -->
+
+</body>
+</html>
